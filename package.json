@@ -1,7 +1,7 @@
 {
-  "name": "blankapp",
+  "name": "Where to eat",
   "version": "1.0.0",
-  "description": "blankApp: An Ionic project",
+  "description": "Where to eat, a food discovery app",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",

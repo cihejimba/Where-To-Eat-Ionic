@@ -1,4 +1,50 @@
-/* Empty. Add your own CSS if you like */
-ion-content {
+/* Main body fonts */
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
 
+ion-content {
+    font-family: 'Questrial', sans-serif;
+}
+
+.header {
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    background: url('../img/home.jpg');
+    background-size: cover;
+    height: 40vh;
+    text-align: center;
+}
+
+.header .logo {
+    display: block;
+    font-size: 4em;
+    padding-top: 15vh;
+}
+
+.header .tagline {
+    font-family: "Questrial", sans-serif;
+    display:block;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.search {
+    height: 60vh;
+    background: #3498db;
+}
+
+.search .search-prompt{
+    color: white;
+    padding-top: 15%;
+    text-align: center;
+    font-size: 1.5em;
+}
+.search button {
+
+    margin: 0 auto;
+}
+
+.search .bar {
+    background: #3498db;
+    color: white;
 }
