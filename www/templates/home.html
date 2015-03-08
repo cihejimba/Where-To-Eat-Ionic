@@ -1,34 +1,37 @@
-<ion-pane>
-    <ion-content>
-        <div class="header">
-            <span class="logo">
-                Eat Under
-            </span>
-            <span class="tagline">
-                Find restaurants near you!
-            </span>
-        </div>
-        <div class="search">
-            <div class="container">
-                <div class="prompt">
-                    Where can I eat for under
-                </div>
-            <!--     <div ng-controller="SearchController"> -->
-            <div>
-                    <div class="list list-inset">
-                      <label class="item item-input">
-                        <span class="dollar">$</span><input type="text" ng-model="search.price" value="10">
-                      </label>
-                    </div>
-                    <button type="submit" ng-click="update(search)">Show me</button>
-                </div>
 
+    <ion-pane>
+        <ion-content>
+            <div class="header">
+                <span class="logo">
+                    Eat Under
+                </span>
+                <span class="tagline">
+                    Find restaurants near you!
+                </span>
             </div>
-            <a href="#">
-                <div class="bar bar-footer">
-                  <div class="title">Learn more</div>
+            <div class="search">
+                <div class="container">
+                    <div class="prompt">
+                        Where can I eat for under
+                    </div>
+                    <div ng-controller="SearchController">
+                        <form>
+                            <div class="list list-inset">
+                              <label class="item item-input">
+                                <span class="dollar">$</span>
+                                <input type="text" ng-model="price" value="10">
+                              </label>
+                            </div>
+                            <button type="submit" ng-click="getPrice()">Show me</button>
+                        </form>
+                    </div>
                 </div>
-            </a>
-        </div>
-    </ion-content>
-</ion-pane>
+                {{ input }}
+                <a href="#">
+                    <div class="bar bar-footer">
+                      <div class="title">Learn more</div>
+                    </div>
+                </a>
+            </div>
+        </ion-content>
+    </ion-pane>
