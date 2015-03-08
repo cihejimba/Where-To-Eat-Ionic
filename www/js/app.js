@@ -42,10 +42,25 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 });
 
-app.controller('SearchController', function($scope) {
+app.controller('SearchController', function($scope, $http) {
     $scope.getPrice = function() {
-        console.log( "Price: " + $scope.price )
+        var price = $scope.price;
+
+        if (price){
+            $http.post('http://www.google.com').
+              success(function(data, status, headers, config) {
+                // this callback will be called asynchronously
+                // when the response is available
+                console.log('success');
+              }).
+              error(function(data, status, headers, config) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+              });
+        }
+
     }
+
 
 })
 app.controller('ResultsController', ['$scope', function($scope) {
